@@ -5,7 +5,6 @@
         <title>Redfish Coffee</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="./assets/style.css">
-        <link rel="stylesheet" href="">
         <link rel="stylesheet" href="./assets/fonts/themify/themify-icons/themify-icons.css">
     </head>
     <body>
@@ -19,23 +18,23 @@
                    <li>
                        <a href="#band">Đồ uống</a>
                        <ul class="subnav">
-                            <li><a href="#caphe1">Cà phê</a></li>
-                            <li><a href="#tras">Trà</a></li>
+                            <li><a href="">Cà phê</a></li>
+                            <li><a href="">Trà</a></li>
                         </ul>
                     </li>
                    <li><a href="#tour">Sản phẩm</a></li>
-                  
+                   
                    <li>
                        <a href="#tour1">Giới thiệu </a>
                        <ul class="subnav">
-                           <li><a href="#tour1">Nhân viên</a></li>
+                           <li><a href="#nhanvien">Nhân viên</a></li>
                            <li><a href="#footer">Địa chỉ</a></li>
                            <li><a href="#footer">Liên hệ</a></li>
                        </ul>
                     </li>
                     <li><a href="#contact">Về chúng tôi</a></li>
                </ul>
-                    
+ 
                <div class="shopping-cart">
                 <i class="ti-shopping-cart">
                     <p class="product">
@@ -73,7 +72,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                         <h1 class="uong">Đồ uống</h1>
                     </div>
  
-                    <div id= "caphe1" class="drink">
+                    <div class="drink">
  
                         <h1>Cafe</h1>
  
@@ -101,9 +100,10 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                         <div class="clear"></div>
                     </div>  
                      <div class="tea">
-                    <h1 id="tras">Trà</h1>
+                    <h1>Trà</h1>
                 </div>
  
+                 
                 <div class="member-list">
                     <div class="col col-third text-center">
                         <p class="member-name1" style="font-family: Brush Script MT;">Trà đào cam sả</p>
@@ -124,11 +124,13 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                         <p class="member-name1" style="font-family: Brush Script MT;">Ame Cam</p>
                         <img src="./assets/fonts/images/anh13.jpg" alt="" class="member-img1">
                     </div>
+                </div>   
+
                     <div class="clear"></div>
                 </div>               
-                </div>
+               
  
- 
+            
                 <div id="tour" class="tour-section">
                     <div class="content-section">
                         <h2 class="section-heading text-white">SẢN PHẨM</h2>
@@ -141,22 +143,23 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                             <li>Cafe đóng chai <span class="quantity">3</span></li>
                         </ul>
                         <!-- places-->
-                        <div class="row places-list">
+                    <div class="row places-list">
                             <div class="col col-third">
                                 <img src="./assets/fonts/images/cafe1.jpg" alt="New Yord" class="places-img">
                                 <div class="places-body">
                                     <h3 class="places-heading">Hạt Cafe</h3>
-                                    <p class="places-time">Fri 27 Nov 2016</p>
+                                    <p class="places-time">50$/100g</p>
                                     <button class="btn js-buy-ticket">Đặt hàng </button>
  
                                 </div>
                             </div>
+                      
  
                             <div class="col col-third">
                                 <img src="./assets/fonts/images/anh21.jpg" alt="Paris" class="places-img">
                                 <div class="places-body">
                                     <h3 class="places-heading">Bột Matcha</h3>
-                                    <p class="places-time">Sat 28 Nov 2016</p>
+                                    <p class="places-time">75$/200g</p>
                                     <button  class="btn js-buy-ticket">Đặt hàng </button>
  
                                 </div>
@@ -166,7 +169,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                                 <img src="./assets/fonts/images/coc1.jpg" alt="San Francisco" class="places-img">
                                 <div class="places-body">
                                     <h3 class="places-heading">Cốc</h3>
-                                    <p class="places-time">Sun 29 Nov 2016</p>
+                                    <p class="places-time">5$</p>
                                     <button  class="btn js-buy-ticket">Đặt hàng </button>
  
                                 </div>
@@ -176,7 +179,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                                 <img src="./assets/fonts/images/dongchai.jpg" alt="San Francisco" class="places-img">
                                 <div class="places-body">
                                     <h3 class="places-heading">Cafe đóng chai</h3>
-                                    <p class="places-time">Sun 29 Nov 2016</p>
+                                    <p class="places-time">4$</p>
                                     <button  class="btn js-buy-ticket">Đặt hàng </button>
  
                                 </div>
@@ -187,63 +190,61 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                         </div>
                     </div>
                 </div>
+                <div id="tour1" class="tour-section">
 
-                
-                <div class="tour-section"> 
-                    <div class="nhanvien">
-                        <div class="content-section">
-                            <h2 class="section-heading text-white" id="tour1">NHÂN VIÊN</h2>
-                            <p class="section-sub-heading1 text-white">Nhân viên của chúng tôi!</p>  
-                            <!-- places-->
-                            <div class="row places-list">
-                                <div class="col col-third">
-                                    <img src="./assets/fonts/images/anhongchu.jpg" alt="New Yord" class="places-img">
-                                    <div class="places-body">
-                                        <h3 class="places-heading">Nguyễn Đình Duy</h3>
-                                        <p class="places-time">4/1/1986</p>
-                                        <p class="staff">Boss</p>
-    
-                                    </div>
+                    <div id="nhanvien">
+ 
+                    <div class="content-section">
+                        <h2 class="section-heading text-white">NHÂN VIÊN</h2>
+                        <p class="section-sub-heading1 text-white">Nhân viên của chúng tôi!</p>  
+                        <!-- places-->
+                        <div class="row places-list">
+                            <div class="col col-third">
+                                <img src="./assets/fonts/images/anhongchu.jpg" alt="New Yord" class="places-img">
+                                <div class="places-body">
+                                    <h3 class="places-heading">Nguyễn Đình Duy</h3>
+                                    <p class="places-time">4/1/1986</p>
+                                    <p class="staff">Boss</p>
+ 
                                 </div>
-    
-                                <div class="col col-third">
-                                    <img src="./assets/fonts/images/anhnhanvien1.jpg" alt="Paris" class="places-img">
-                                    <div class="places-body">
-                                        <h3 class="places-heading">Nguyễn Thăng</h3>
-                                        <p class="places-time">12/5/1995</p>
-                                        <p class="staff">Barista</p>
-    
-                                    </div>
+                            </div>
+ 
+                            <div class="col col-third">
+                                <img src="./assets/fonts/images/anhnhanvien1.jpg" alt="Paris" class="places-img">
+                                <div class="places-body">
+                                    <h3 class="places-heading">Nguyễn Thăng</h3>
+                                    <p class="places-time">12/5/1995</p>
+                                    <p class="staff">Barista</p>
+ 
                                 </div>
-    
-                                <div class="col col-third">
-                                    <img src="./assets/fonts/images/tuan2.jpg" alt="San Francisco" class="places-img">
-                                    <div class="places-body">
-                                        <h3 class="places-heading">Nguyễn Mạnh Tuấn</h3>
-                                        <p class="places-time">3/4/2001</p>
-                                        <p class="staff">Barista</p>
-    
-                                    </div>
+                            </div>
+ 
+                            <div class="col col-third">
+                                <img src="./assets/fonts/images/tuan2.jpg" alt="San Francisco" class="places-img">
+                                <div class="places-body">
+                                    <h3 class="places-heading">Nguyễn Mạnh Tuấn</h3>
+                                    <p class="places-time">3/4/2001</p>
+                                    <p class="staff">Barista</p>
+ 
                                 </div>
-    
-                                <div class="col col-third">
-                                    <img src="./assets/fonts/images/anhnhanvien4.jpg" alt="San Francisco" class="places-img">
-                                    <div class="places-body">
-                                        <h3 class="places-heading">Nguyễn Tú Anh</h3>
-                                        <p class="places-time">21/7/2003</p>
-                                        <p class="staff">Waiter</p>
-    
-                                    </div>
+                            </div>
+ 
+                            <div class="col col-third">
+                                <img src="./assets/fonts/images/anhnhanvien4.jpg" alt="San Francisco" class="places-img">
+                                <div class="places-body">
+                                    <h3 class="places-heading">Nguyễn Tú Anh</h3>
+                                    <p class="places-time">21/7/2003</p>
+                                    <p class="staff">Waiter</p>
+ 
                                 </div>
-    
-                                <div class="clear"></div>
-    
                             </div>
                         </div>
+ 
+                            <div class="clear"></div>
+ 
+                        </div>
                     </div>
-                        
                 </div>
-                
  
                 <div id="contact" class="content-section">
                     <h2 class="section-heading">VỀ CHÚNG TÔI</h2>
@@ -289,19 +290,8 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
  
             </div>
  
-            <div id="footer">
-                <div class="col col-half contact-info">
-                    <div class="bacninh">
-                        <p class="bn"><i class="ti-location-pin"></i>Bắc Ninh, Việt Nam</p>
-                        <p><i class="ti-mobile"></i>Phone: 097 555 88 73</p>
-                        <p class="mail"><i class="ti-email"></i>Email: redfishcoffee1@gmail.com</p>
-                    </div>
-                </div>
-                <div class="bando">
-                    <img src="./assets/fonts/images/map1.jpg" alt="map">
-                </div>
-            </div>
-
+ 
+            
             <div class="nhanvien"></div>
         </div>
         <div class="modal js-modal">
@@ -310,22 +300,22 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                     <i class="ti-close"></i>
                 </div>
                 <header class="modal-header">
-
+ 
                     <i class="ti-bag"></i>
-                    Tickets
+                    Shopping cart
                 </header>
                 <div class="modal-body">
                     <label for="quality" class="modal-label">
                         <i class="ti-shopping-cart-full"></i>
-                        Tickets, 15$ 
+                        Quantity
                     </label>
                     <input id="quality" type="text" class="modal-input" placeholder="How many?">
-
-                    <label for="email" class="modal-label">
+ 
+                    <label for="Address" class="modal-label">
                         <i class="ti-user"></i>
-                        send to
+                        Note
                     </label>
-                    <input id="email" type="email" class="modal-input" placeholder="enter email">
+                    <input id="Address" type="Address" class="modal-input" placeholder="Address">
                     <button id="buy-tickets">
                         Pay <i class="ti-check"></i>
                     </button>
@@ -335,31 +325,47 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                 </footer>
             </div>
         </div>
-        <div id="footer1">
-            <div class="socials-list">
-            <a href=""><i class="ti-facebook"></i></a>
-            <a href=""><i class="ti-instagram"></i></a>
-            <a href=""><i class="ti-twitter"></i></a>
-            <a href=""><i class="ti-skype"></i></a>
-            <a href=""><i class="ti-pinterest"></i></a>
-            <a href=""><i class="ti-linkedin"></i></a>
+
+        <div id="footer">
+            <div class="col col-half contact-info">
+                <div class="bacninh">
+                    <p class="bn"><i class="ti-location-pin"></i>Bắc Ninh, Việt Nam</p>
+                    <p><i class="ti-mobile"></i>Phone: 097 555 88 73</p>
+                    <p class="mail"><i class="ti-email"></i>Email: redfishcoffee1@gmail.com</p>
+                </div>
             </div>
-            <p class="copyright">Liên hệ với chúng tôi!</p>
-            
+            <div class="bando">
+                <img src="./assets/fonts/images/map1.jpg" alt="map">
             </div>
+        </div>
+
+
+<div id="footer1">
+        <div class="socials-list">
+        <a href=""><i class="ti-facebook"></i></a>
+        <a href=""><i class="ti-instagram"></i></a>
+        <a href=""><i class="ti-twitter"></i></a>
+        <a href=""><i class="ti-skype"></i></a>
+        <a href=""><i class="ti-pinterest"></i></a>
+        <a href=""><i class="ti-linkedin"></i></a>
+        </div>
+        <p class="copyright">Liên hệ với chúng tôi!</p>
+
+        </div>
+ 
         <script>
             const buyBtns = document.querySelectorAll('.js-buy-ticket')
             const modal = document.querySelector('.js-modal')
             const modalClose = document.querySelector('.js-modal-close')
-
-
+ 
+ 
             function showBuyTickets() {
                 modal.classList.add('open')
             }
             function hideBuyTickets() {
                 modal.classList.remove('open')
             }
-
+ 
             for (const buyBtn of buyBtns) {
                 buyBtn.addEventListener('click' , showBuyTickets)
             }
