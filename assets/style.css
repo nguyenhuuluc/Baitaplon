@@ -72,6 +72,8 @@ html *{
 } 
 #header {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     height: 100px;
     background-color: black;
     position: fixed;
@@ -80,10 +82,19 @@ html *{
     right: 0;
     z-index: 1;
     font-size: 18px;
+    margin-bottom: 100px;
 }
+
+#header .search-btn{
+    margin-left: -3%;
+    width: 20%;
+}
+
 #nav {
+    width: 65%;
     display: inline-block;
 }
+
 #nav > li:hover > a{
     color:	#00FFFF;
     /* background-color: #ccc; */
@@ -138,22 +149,15 @@ html *{
     color: #00FFFF;
 }
  
- 
-#header .search-icon{
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 46px;
-}
- 
- #header .ti-shopping-cart{
-    /* float: right; */
+
+#header .ti-shopping-cart{
+    line-height: 100px;
     color: #fff;
     font-size: 25px;
-    margin-left: 250px;
-    line-height: 100px;
+    width: 15%;
 } 
  
- #header .shopping-cart{
+#header .shopping-cart{
     cursor: pointer;
     padding: 0 21px;
 } 
@@ -170,13 +174,13 @@ html *{
 #header .product{
     text-align: center;
     font-family: sans-serif;
-     display: none; 
+    display: none; 
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     color: white;
     background-color: black;
     position: absolute;
-    left: 80%;
+    left: 85%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     animation: fadeIn linear 0.2s;
 }
@@ -191,7 +195,6 @@ html *{
 }
  
 .drink h1{
- 
     text-align: center;
     margin-top: 40px;
     font-family: Comic Sans MS
@@ -209,7 +212,6 @@ html *{
  
 #slider {
     position: relative;
-    margin-top: 100px;
 }
  
 #slider .text-content{
@@ -332,6 +334,11 @@ html *{
 .tour-section{
     background-color: #000;
 }
+
+.members-section{
+    background-color: #000;
+}
+
 .tickets-list{
     background-color: #fff;
     margin-top: 40px;
@@ -443,29 +450,81 @@ html *{
     border: 1px solid #ccc;
     width: 100%;
 }
- 
- 
-.map-section img{
-    width: 100%;
-}
+
 #footer {
+
+    padding: 64px 16px;
+
+    text-align: center;
+
+}
+
+#footer .socials-list{
+
+    font-size: 24px;
+
+}
+
+#footer .socials-list a{
+
+    text-decoration: none;
+
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+#footer .socials-list a:hover{
+
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+#footer .copyright{
+
+    margin-top: 15px;
+
+    font-style: italic;
+
+}
+
+#footer {
+    display:flex;
+    /* justify-content: space-evenly; */
+}
+.bacninh{
+        margin-top: 95px;
+    }
+.bando img {
+        margin-right: 50px;
+        border-style: ridge;
+    }
+.mail{
+    padding-left: 70px;
+}
+.bn{
+    padding-left: 5px;
+}
+
+#footer1 {
     padding: 64px 16px;
     text-align: center;
 }
-#footer .socials-list{
+#footer1 .socials-list{
     font-size: 24px;
 }
-#footer .socials-list a{
+#footer1 .socials-list a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
 }
-#footer .socials-list a:hover{
+#footer1 .socials-list a:hover{
     color: rgba(0, 0, 0, 0.4);
 }
-#footer .copyright{
+#footer1 .copyright{
     margin-top: 15px;
     font-style: italic;
+    text-align: center;
 }
+
 .modal.open{
     display: flex;
 }
@@ -483,10 +542,8 @@ html *{
 .modal-container{
     background: #fff;
     width: 900px;
-    max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
-    animation: modalFadeIn ease 0.3s;
 }
 .modal-header{
     background-color: #009688;
@@ -544,50 +601,4 @@ html *{
     padding: 16px;
     text-align: right;
 }
-@keyframes modalFadeIn{
-    from{
-        opacity: 0;
-        transform: translateY(-140px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-} 
-#footer {
-    display:flex;
-    /* justify-content: space-evenly; */
-}
-.bacninh{
-        margin-top: 95px;
-    }
-.bando img {
-        margin-right: 50px;
-        border-style: ridge;
-    }
-.mail{
-    padding-left: 70px;
-}
-.bn{
-    padding-left: 5px;
-}
- 
-#footer1 {
-    padding: 64px 16px;
-    text-align: center;
-}
-#footer1 .socials-list{
-    font-size: 24px;
-}
-#footer1 .socials-list a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.6);
-}
-#footer1 .socials-list a:hover{
-    color: rgba(0, 0, 0, 0.4);
-}
-#footer1 .copyright{
-    margin-top: 15px;
-    font-style: italic;
-    text-align: center;
-}   
+
