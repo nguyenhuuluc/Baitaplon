@@ -1,0 +1,68 @@
+@media only screen and (max-width: 739px)
+{
+    #nav{
+        overflow: hidden;
+    }
+    #menu
+    {
+        visibility: hidden
+    }
+    .member-list{
+        flex-wrap: wrap;
+    }
+    .text-center img{
+        width: 50%;
+        text-align: center;
+    }
+    .drink, .tea, .uong1{
+        text-align: center;
+    }
+    .text-content
+    {
+        text-align: center;
+        font-size: 10px;
+    }
+    .text-content h2{
+        font-size: 15px;
+    }
+    .product img{
+        width: 90%;
+        text-align: center;
+        margin-left: 31px;
+    }
+    .an, .bando{
+        visibility: hidden;
+    }
+    .bacninh{
+        font-size: 15px;
+    }
+    .text-white{
+        text-align: center;
+        padding-top: 15px;
+    }
+    #content .member-img{
+        width: 154px;
+        margin-top: 15px;
+        border-radius: 0%;
+    }
+    .member-list img{
+        animation: img 0s linear infinite;
+    }
+    .uong1 h1{
+        font-size: 60px;
+    }
+    .drink h1, .tea h1{
+        font-size: 50px;
+    }
+    .member-name, .member-name1{
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    #contact
+    {
+        text-align: center;
+    }
+    .play-button{
+        margin-left: 110px;
+    }
+}

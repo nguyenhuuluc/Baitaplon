@@ -86,7 +86,7 @@ html *{
 }
 
 #header .search-btn{
-    margin-left: -3%;
+    margin-left: -2%;
     width: 20%;
 }
 
@@ -156,7 +156,10 @@ html *{
     font-size: 25px;
     width: 15%;
 } 
- 
+
+.shopping-cart a{
+    text-decoration: none;
+}
 #header .shopping-cart{
     cursor: pointer;
     padding: 0 21px;
@@ -407,29 +410,54 @@ html *{
     left: 0;
 }
  
-.play-video {
-    position: relative;
-    top: 0;
-    left: 0;
-}
- 
-.play-button {
+.preview__play-btn {
     cursor: pointer;
     position: absolute;
     top: 35px;
     left: 85px;
-    overflow: hidden;
 }
  
-.play-button img{
+.preview__play-btn img{
     transition: 1s;
 }
  
-.play-button-png:hover img{
+.preview__play-btn:hover img{
     transform: scale(1.2);
     transition: 1s;
 }
- 
+
+.preview__video--play{
+    display: none;
+}
+
+.preview__video-demo{
+    --width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--width);
+    height: calc(var(--width) * 9 / 16);
+}
+
+.preview__video-check:checked ~ .preview__video--play{
+    display: block;
+}
+
+.preview__overlay{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.preview__video-check{
+    display: none;
+} 
+
 .contact-content{
     display: flex;
     margin-top: 48px;

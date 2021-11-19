@@ -3,14 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Redfish Coffee</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/style.css">
         <link rel="stylesheet" href="./assets/fonts/themify/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="./reponsive.css">
     </head>
     <body>
         <div id="main">
             <div id="header">
-                <div class="search-btn">
+                <div class="search-icon">
                     <img src="./assets/fonts/images/anh4.jpg" alt="">
                 </div>
                <ul id="nav">
@@ -23,7 +24,7 @@
                         </ul>
                     </li>
                    <li><a href="#tour">Sản phẩm</a></li>
-                   
+ 
                    <li>
                        <a href="#tour1">Giới thiệu </a>
                        <ul class="subnav">
@@ -36,12 +37,10 @@
                </ul>
  
                <div class="shopping-cart">
-                <i class="ti-shopping-cart">
-                    <p class="product">
-                        Không có sản phẩm.
-                    </p>
-                </i>
-            </div>
+                  <a href="login.html"><i class="ti-shopping-cart"></i></a>
+                     
+                  
+                </div>
  
            </div>
  
@@ -103,7 +102,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                     <h1>Trà</h1>
                 </div>
  
-                 
+ 
                 <div class="member-list">
                     <div class="col col-third text-center">
                         <p class="member-name1" style="font-family: Brush Script MT;">Trà đào cam sả</p>
@@ -125,12 +124,12 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                         <img src="./assets/fonts/images/anh13.jpg" alt="" class="member-img1">
                     </div>
                 </div>   
-
+ 
                     <div class="clear"></div>
                 </div>               
-               
  
-            
+ 
+ 
                 <div id="tour" class="tour-section">
                     <div class="content-section">
                         <h2 class="section-heading text-white">SẢN PHẨM</h2>
@@ -153,7 +152,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
  
                                 </div>
                             </div>
-                      
+ 
  
                             <div class="col col-third">
                                 <img src="./assets/fonts/images/anh21.jpg" alt="Paris" class="places-img">
@@ -191,7 +190,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                     </div>
                 </div>
                 <div id="tour1" class="tour-section">
-
+ 
                     <div id="nhanvien">
  
                     <div class="content-section">
@@ -259,13 +258,18 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
  
                         </div> -->
                         <div class="anh1">
-                            <img src="./assets/fonts/images/redfish.jpg" alt="" class="play-video">
-                            <div class="play-button-png">
-                                <a href="https://w...content-available-to-author-only...e.com/watch?v=llf_L0i9OdA">
-                                    <img src="./assets/fonts/images/play-button.png" alt="" class="play-button">
-                                </a>
-                            </div>
-                        </div>
+                            <input type="checkbox" class="preview__video-check" id="preview__video--on">
+                            <label for="preview__video--on" class="preview__video-background">
+                                <img src="./assets/fonts/images/redfish.jpg" class="preview__video-img" alt="">
+                                <div class="preview__play-btn">
+                                    <img src="./assets/fonts/images/play-button.png" alt="">
+                                </div>
+                            </label>
+                            <label for="preview__video--on" class="preview__video--play preview__overlay">
+                                <iframe src="https://www.youtube.com/embed/3TpDkYe8_Uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="preview__video-demo"></iframe>
+                    
+                            </label>
+                        </div> 
  
                         <div class="col col-half contact-form">
                             <form action="">
@@ -280,8 +284,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                                 <div class="row mt-8">
                                     <div class="col col-full">
                                         <input type="text" name="" placeholder="Message" required id="" class="form-control">
-                                    </div>
- 
+                                    </div> 
                                 </div>
                                 <input class="btn mt-16 pull-right" type="submit" value="SEND">
                             </form>
@@ -290,8 +293,6 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
  
             </div>
  
- 
-            
             <div class="nhanvien"></div>
         </div>
         <div class="modal js-modal">
@@ -325,7 +326,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                 </footer>
             </div>
         </div>
-
+ 
         <div id="footer">
             <div class="col col-half contact-info">
                 <div class="bacninh">
@@ -338,8 +339,8 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
                 <img src="./assets/fonts/images/map1.jpg" alt="map">
             </div>
         </div>
-
-
+ 
+ 
 <div id="footer1">
         <div class="socials-list">
         <a href=""><i class="ti-facebook"></i></a>
@@ -350,7 +351,7 @@ Không có ly cà phê ngon nhất mà chỉ có những ly cà phê mang hươn
         <a href=""><i class="ti-linkedin"></i></a>
         </div>
         <p class="copyright">Liên hệ với chúng tôi!</p>
-
+ 
         </div>
  
         <script>
